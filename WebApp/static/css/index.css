@@ -1,0 +1,83 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #DBDBDB;
+}
+.title-logo{
+  margin-top: 1%;
+  margin-left: 37%;
+  margin-right: 37%;
+  height: 20%;
+  width:  22%;
+}
+.actual-body{
+  margin: auto;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+.form-text{
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.form-subtext{
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 3px;
+}
+.textbox{
+  width: 696px;
+  height: 70px;
+  font-size: 20px;
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+}
+.textbox-number{
+  position: relative;
+  width: 70px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-size: 30px;
+}
+.file-upload{
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 270px;
+  border: 2px solid red;
+  border-radius: 4px;
+  background: #fff;
+}
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #B4000E;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 14px #000;
+  margin-left: 250px;
+}
+
+.button:hover {background-color: #F5000E}
+
+.button:active {
+  background-color: #F5000E;
+  box-shadow: 0 5px #000;
+  transform: translateY(4px);
+}
+

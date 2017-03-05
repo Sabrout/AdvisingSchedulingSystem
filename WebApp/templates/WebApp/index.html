@@ -1,0 +1,25 @@
+{% extends 'WebApp/base.html' %}
+
+{% block content %}
+
+    <h2 class="form-text">Please enter curriculum:</h2>
+    <h2 class="form-subtext">(i.e MATH 103, 8, CSEN 102, CSEN 501; CSEN 906, 6, CSEN 501; DE 404, 4, DE 202)</h2>
+    <br>
+    <h2 class="form-text">Please enter student's course history:</h2>
+    <h2 class="form-subtext">(i.e MATH 103, A-; CSEN 906, B+; DE 404, FA; DMET 904, C)</h2>
+    <br>
+    <h2 class="form-text">Please enter obligatory courses for this semester:</h2>
+    <h2 class="form-subtext">(i.e MATH 103, 5; CSEN 906, 8; DE 404, 4;DMET 904, 6)</h2>
+    <br>
+    <h2 class="form-text">Please enter number of maximum credit hours:</h2>
+    <br>
+    <h2 class="form-text">Upload schedule of all courses:</h2>
+    <h2 class="form-subtext">(The file must be .xlsx and in the project's root directory and type the file's name in the Excel textbox)</h2>
+    <br>
+
+    <h1>Inputs:</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Submit</button>
+    </form>
+{% endblock %}
